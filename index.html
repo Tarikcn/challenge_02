@@ -19,40 +19,41 @@
 
         <nav class="navbar">
                 <a href="index.html">HOME</a>
-                <a href="#">Services</a>
+                <a href="https://github.com/Tarikcn">Portofolio</a>
                 <a href="mailto:khamliche@gmail.com">Contact Me</a>
                 <a href="#">Subscribe</a>
                 <a href="#">FAQ</a>
 
         </nav>
         <div class="icon">
-            <a href = "https://github.com/Tarikcn" i class="fab fa-github" id="github"></i></a>
+            <a href = "https://github.com/Tarikcn"><i class="fab fa-github" id="github"></i>
             <i class="fas fa-bars" id="menu-btn"></i>
-    
-
         </div>  
    </header>
 
-   <main>
-        <section class="intro">
-            <h1 class="first heading">Hello</h1>
-            <P class="text"> I am TK, a full-stack developer based in the United Kingdom.</P>
+   <section class="home">
+      <div class="max-width">
+          <div class="home-content">
+              <h4> Hello, I am Tarik</h4>
+              <h2> UI & UX <br><span>Designer</span></h2>
+              <h6> Web Designer and Developer</h6>
+              <button class="btn">Hire Me</button>
+            </div>
 
-        </section>
-            
-
-
-
-
-          </section> 
-
-
-  
-
-
-    </main>
+          <div class="home-image">
+              <img src="./assets/Images/pfp.png" alt="Image of Tarik">
+          </div>   
+        </div>
+   </section>
+          
+      
+   
+   <script>
+        let navbar = document.querySelector('.navbar');
+        document.querySelector('#menu-btn').onclick =() =>{
+            navbar.classList.toggle('active');
+        }
+   </script>
     
 </body>
-
-
 </html>
