@@ -14,8 +14,6 @@
 
 body{
     background: #eee;
-    margin-top: auto;
-    overflow: hidden;
 }
 /*header Bar*/
 
@@ -25,7 +23,7 @@ body{
     left: 0;
     right: 0;
     padding: 1rem,13%;
-    margin: 35px;
+    margin: auto;
     display: flex;
     color: #000;
     align-items: center;
@@ -57,7 +55,7 @@ body{
 .header .icon{
     display: flex;
     justify-content: center;
-    align-items: center
+    align-items: center;
 
 }
 .header .icon i{
@@ -74,4 +72,149 @@ body{
     color: #fff;
     background: rgb(201, 107, 19);
 }
+.header .icon i:hover{
+    color: #baa6cf;
 
+}
+#menu-btn{
+    display: none;
+
+}
+
+/* Media Queries Navbar*/
+@media (max-width:991px){
+    .html{
+        font-size: 70%;
+    }
+}   .header{
+    padding: 2rem;
+}
+/* Header menu responsivness*/
+
+@media (max-width:768px){
+    #menu-btn{
+        display: inline-block;
+    }
+    .header .navbar{
+        position: absolute;
+        top: 99%;
+        left: 0;
+        right: 0;
+        background: #fff;
+        clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+    }
+    .header .navbar .active{
+        clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    }
+    .header .navbar a{
+        margin: 1.5rem;
+        padding: 1.5rem; 
+        color: #000;
+        font-size: 1.7rem;
+        display: block;
+        border-radius: 0.5rem;
+        text-align: center;
+        background: rgb(233, 230, 230);
+    }
+}
+.max-width{
+    max-width: 1100px;
+    margin: auto;
+}
+/* Home Section*/
+.home{
+    display: flex;
+}
+.home .max-width{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.home .home-content{
+    width: 50%;
+    padding: 1.8rem;
+}
+
+.home h4,h2,h6,.btn{
+    margin left: 3rem;
+}
+.home h4{
+    margin-top: 5rem;
+    font-size: 1.2rem;
+
+}
+.home h2{
+    font-size: 4.5rem;
+}
+.home h2 span{
+    color: rgb(201, 107, 19);
+
+}
+.home h6{
+    font-size: 1.7rem;
+    
+}
+.btn{
+    width: 130px;
+    padding: 12px;
+    color: #fff;
+    font-size: 14px;
+    cursor: pointer;
+    letter-spacing: 2px;
+    margin-top: 1rem;
+    border-radius: 6px;
+    text-transform: uppercase;
+    background: rgb(201, 107, 19);
+
+}
+.btn:hover{
+    transition: 0.4s;
+    background: rgba(10, 10, 10, 0.76);
+}
+.home .home-image{
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.home .home-image img{
+    width: 100%;
+
+}
+@media(max-width:991px){
+    .max-width{
+        padding:0 50px;
+    }
+}
+@media (max-width:947){
+    .home{
+        padding:0;
+    }
+    .max-width{
+        max-width: 930px;
+    }
+    .home .home-image img{
+        width: 350px;
+    }
+}
+@media (max-width: 690px) {
+    .home .max-width{
+        padding: 0 20px;
+        display: block;
+    }
+    .home .home-content{
+        width: 100%;
+    }
+    .home .home-image{
+        width: 100%;
+        padding: 3rem;
+    }
+}
+
+@media (max-width:500px){
+    .home{
+        margin-top: -4rem;
+    }
+}
