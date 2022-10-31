@@ -1,0 +1,77 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;600;700&display=swap");
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: 0;
+    text-transform: capitalize;
+    text-decoration: none;
+    transition: 0.2s linear;
+    font-family: "poppins", sans-serif;
+}
+
+body{
+    background: #eee;
+    margin-top: auto;
+    overflow: hidden;
+}
+/*header Bar*/
+
+.header{
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: 1rem,13%;
+    margin: 35px;
+    display: flex;
+    color: #000;
+    align-items: center;
+    justify-content:space-around;
+    background: #fff;
+    
+}
+
+.header .logo{
+    font-size: 1.8rem;
+    font-weight: bolder;
+    padding: 8px 12px;
+    color: rgb(201, 107, 19);
+    border: 1px solid rgb(201, 107, 19);
+}
+/* Header Navbar */
+
+.header .navbar a{
+    font-size: 1.1rem;
+    color: rgb(36, 35, 35);
+    margin: 0 1rem;
+
+}
+.header .navbar a:hover{
+   transition: 0.4s;
+   color: rgba(10, 10, 10, 0.76);
+
+}
+.header .icon{
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+.header .icon i{
+    font-size: 2.5rem;
+    margin-left: 2.5rem;
+    cursor: pointer;
+    color: rgb(107, 100, 100);
+}
+.header .icon #github{
+    font-size: 1.2rem;
+    padding: 10px;
+    border-radius: 50%;
+    cursor: pointer;
+    color: #fff;
+    background: rgb(201, 107, 19);
+}
+
